@@ -1,0 +1,18 @@
+version: '2'
+services:
+  ws-chat: 
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "6970:6969"
+    # image: "node:current-alpine3.14"
+    # user: "node"
+    # working_dir: "/usr/src/app"
+    # environment:
+    #   - NODE_ENV=production 
+    # volumes: 
+    #   - ./:/usr/src/app 
+    # expose: 
+    #   - "6969"
+    # command: "npm start"
